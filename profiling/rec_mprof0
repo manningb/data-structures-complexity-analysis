@@ -1,0 +1,14 @@
+Filename: C:\Users\manni\Documents\ComputerScience\College\Semester 2\20230 DSA\assignments\assignment_1\mem_factorial_recursive.py
+
+Line #    Mem usage    Increment  Occurences   Line Contents
+============================================================
+     2    329.6 MiB    329.6 MiB        1001   def factorial_recursive(n=1000):
+     3                                             """
+     4                                             Function to calculate the factorial of a positive integer
+     5                                             If the input is not a positive integer, return -1
+     6                                             Non-tail-recursive
+     7                                             """
+     8    329.6 MiB      0.0 MiB        1001       if n == 0:
+     9    329.6 MiB      0.0 MiB           1           return 1
+    10                                             else:
+    11    329.6 MiB      0.0 MiB        1000           return n * factorial_recursive(n-1)
